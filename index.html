@@ -1,12 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8"
-    <meta name="viewport" content"width=divice-width, initial-scale=1.0">
-    <meta>
-    <title>Portifólio do Felipe</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projeto Portifólio do Felipe, desenvolvedor web fullstack">
+  <meta name="author" content="Felipe Peronica">
+  <meta name="keywords" content="Portifólio, desenvolvedor, web, fullstack, Felipe Peronica, HTML, CSS, JavaScript">
+  <link rel="icon" href="./assets/img/favicon.svg" />
+  <title>Portifólio do Felipe</title>
 </head>
 <body>
 
+    <!-- Cabeçalho da página -->
+    <header>
+        <div id="header_content">
+            <!-- Título do cabeçalho -->
+             <div id="titulo">
+                <a href="#">Universo</a>
+             </div>
+
+             <!-- Menu -->
+              <div id="menu">
+
+                    <!-- Barra de Navegação -->
+                     <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#contact">Contatos</a></li>    
+                        </ul>
+                     </nav>
+              </div>
+        </div>
+    </header>
+
+    <!-- Seção Principal da pagina -->
+    <main>
+        <!-- Seção Home -->
+        <section id="home">
+
+            <article id="home_texto">
+
+                <h4>Bem-vindo ao novo universo</h4>
+                <h1>Mundos diferentes para pessoas diferentes</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga perspiciatis inventore culpa? Dolores accusamus, adipisci doloremque voluptatibus, tempora doloribus dolorem similique cum maxime officiis cupiditate eum aliquid ipsum, inventore atque.</p>
+                <a href="https://github.com/feperonica" target="_blank">Explorar</a>
+            </article> 
+
+            <article id="home_imagem">
+                <img src="./assets/img/astronauta.svg" alt="Capacete do astronauta com animação"
+            </article>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="about">
+
+            <img src="./assets/img/user_01.svg" alt="Foto de perfil do Github">
+            <h1>Sobre Mim</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga perspiciatis inventore culpa? Dolores accusamus, adipisci doloremque voluptatibus, tempora doloribus dolorem similique cum maxime officiis cupiditate eum aliquid ipsum, inventore atque.</p>
+                <article id="about_texto">
+                <a href="https://github.com/feperonica" target="_blank">Github</a>
+                <p> 200 seguidores </p>
+                <p> 20 repositorios</p>
+                </article> 
+        </section>
+
+        <!-- Seção Contatos -->
+        <section id="contact">
+            <h4>Contate-me</h4>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Eu nunca mais boto a boca num copo de cachaça, agora eu só uso canudis! Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Leite de capivaris, leite de mula manquis sem cabeça.</p>
+            
+            <div id="icones_redes_sociais">
+                <a href="https://www.linkedin.com/in/felipeperonica" target="_blank">
+                    <img src="./assets/img/linkedin.svg" alt="ícone do Linkedin"/>
+                </a>
+
+                <a href="https://github.com/feperonica" target="_blank">
+                    <img src="./assets/img/github.svg" alt="ícone do Github"/>
+                 </a>
+
+                    <a href="https://www.instagram.com/feperonica/" target="_blank">
+                    <img src="./assets/img/instagram.svg" alt="ícone do instagram"/>
+                </a>
+            </div>
+
+            <form action="sucesso.html#" method="POST">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" placeholder="Digite o seu nome" required>
+                <span id="txtNome"></span>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Digite o seu Email" required>
+                <span id="txtEmail"></span>
+
+                <label for="assunto">Assunto</label>
+                <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto" required>
+                <span id="txtAssunto"></span>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>   
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+    </br>
+        Feito com ♥ por Felipe Peronica - 2025
+    </footer>
 </body>
 </html>
