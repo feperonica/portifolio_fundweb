@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Projeto Portifólio do Felipe, desenvolvedor web fullstack">
-  <meta name="author" content="Felipe Peronica">
-  <meta name="keywords" content="Portifólio, desenvolvedor, web, fullstack, Felipe Peronica, HTML, CSS, JavaScript">
-  <link rel="icon" href="./assets/img/favicon.svg" />
-  <title>Portifólio do Felipe</title>
+
+    <!-- Servidores de Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonte do Google - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto Portifólio do Felipe, desenvolvedor web fullstack">
+    <meta name="author" content="Felipe Peronica">
+    <meta name="keywords" content="Portifólio, desenvolvedor, web, fullstack, Felipe Peronica, HTML, CSS, JavaScript">
+    <link rel="icon" href="./assets/img/favicon.svg" />
+
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+<title>Portifólio do Felipe</title>
+
 </head>
 <body>
 
     <!-- Cabeçalho da página -->
-    <header>
-        <div id="header_content">
+    <header = class="flex menu_container " >
+        <div id="header_content" class= "menu_content">
             <!-- Título do cabeçalho -->
              <div id="titulo">
                 <a href="#">Universo</a>
              </div>
 
              <!-- Menu -->
-              <div id="menu">
+              <div id="menu" class="flex">
 
                     <!-- Barra de Navegação -->
                      <nav>
-                        <ul>
+                        <ul class="flex menu_list">
                             <li><a href="#">Home</a></li>
                             <li><a href="#about">Sobre</a></li>
                             <li><a href="#contact">Contatos</a></li>    
@@ -37,18 +49,19 @@
     <!-- Seção Principal da pagina -->
     <main>
         <!-- Seção Home -->
-        <section id="home">
+        <section id="home" class="flex home_container">
 
-            <article id="home_texto">
+            <article id="home_texto" class="flex home_content">
 
                 <h4>Bem-vindo ao novo universo</h4>
                 <h1>Mundos diferentes para pessoas diferentes</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga perspiciatis inventore culpa? Dolores accusamus, adipisci doloremque voluptatibus, tempora doloribus dolorem similique cum maxime officiis cupiditate eum aliquid ipsum, inventore atque.</p>
-                <a href="https://github.com/feperonica" target="_blank">Explorar</a>
+                <a href="https://github.com/feperonica" target="_blank" class="botao" >Explorar</a>
             </article> 
 
-            <article id="home_imagem">
-                <img src="./assets/img/astronauta.svg" alt="Capacete do astronauta com animação"
+            <!-- Imagem da seção  Home -->
+            <article id="home_imagem" class="flex home_content">
+                <img src="./assets/img/astronauta.svg" alt="Capacete do astronauta com animação">
             </article>
         </section>
 
@@ -59,7 +72,7 @@
             <h1>Sobre Mim</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga perspiciatis inventore culpa? Dolores accusamus, adipisci doloremque voluptatibus, tempora doloribus dolorem similique cum maxime officiis cupiditate eum aliquid ipsum, inventore atque.</p>
                 <article id="about_texto">
-                <a href="https://github.com/feperonica" target="_blank">Github</a>
+                <a href="https://github.com/feperonica" target="_blank" class="botao">Github</a>
                 <p> 200 seguidores </p>
                 <p> 20 repositorios</p>
                 </article> 
@@ -100,7 +113,7 @@
                 <label for="mensagem">Mensagem</label>
                 <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem" required></textarea>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" class="botao">Enviar</button>
             </form>   
         </section>
     </main>
