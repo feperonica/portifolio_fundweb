@@ -1,88 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
     <!-- Servidores de Fontes do Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <!-- Fonte do Google - Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projeto Portifólio do Felipe, desenvolvedor web fullstack">
+    <meta name="description" content="Projeto Portfólio do Felipe Peronica, desenvolvedor web fullstack.">
     <meta name="author" content="Felipe Peronica">
-    <meta name="keywords" content="Portifólio, desenvolvedor, web, fullstack, Felipe Peronica, HTML, CSS, JavaScript">
+    <meta name="keywords" content="portfólio, desenvolvedor, web, fullstack, Felipe Peronica, HTML, CSS, JavaScript">
     <link rel="icon" href="./assets/img/favicon.svg" />
 
     <!-- Link para o arquivo CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 
-<title>Portifólio do Felipe</title>
-
+    <title>Portfólio do Felipe Peronica</title>
 </head>
+
 <body>
 
     <!-- Cabeçalho da página -->
-    <header = class="flex menu_container " >
-        <div id="header_content" class= "menu_content">
+    <header class="flex menu_container">
+
+        <div id="header_content" class="menu_content">
             <!-- Título do cabeçalho -->
-             <div id="titulo">
+            <div id="titulo">
                 <a href="#">Universo</a>
-             </div>
+            </div>
 
-             <!-- Menu -->
-              <div id="menu" class="flex">
+            <!-- Menu -->
+            <div id="menu" class="flex">
 
-                    <!-- Barra de Navegação -->
-                     <nav>
-                        <ul class="flex menu_list">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#about">Sobre</a></li>
-                            <li><a href="#contact">Contatos</a></li>    
-                        </ul>
-                     </nav>
-              </div>
+                <!-- Barra de Navegação -->
+                <nav>
+                    <ul class="flex menu_list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <!-- Seção Principal da pagina -->
+    <!-- Seção principal da página -->
     <main>
+
         <!-- Seção Home -->
-            <section id="about" class="flex sobre_container">
+        <section id="home" class="flex home_container">
 
+            <!-- Texto da seção Home -->
             <article id="home_texto" class="flex home_content">
-
-                <h4>Bem-vindo ao novo universo</h4>
+                <h4>Bem-vindo ao Novo Universo</h4>
                 <h1>Mundos diferentes para pessoas diferentes</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga perspiciatis inventore culpa? Dolores accusamus, adipisci doloremque voluptatibus, tempora doloribus dolorem similique cum maxime officiis cupiditate eum aliquid ipsum, inventore atque.</p>
-                <a href="https://github.com/feperonica" target="_blank" class="botao" >Explorar</a>
-            </article> 
-
-            <!-- Imagem da seção  Home -->
-            <article id="home_imagem" class="flex home_content">
-                <img src="./assets/img/astronauta.svg" alt="Capacete do astronauta com animação">
-            </article>
-        </section>
-        <!-- Seção Sobre -->
-        <section id="about" class="flex sobre_container">
-
-            <!-- Imagem da seção Sobre -->
-            <img src="./assets/img/user_01.svg" alt="Foto do perfil do Github" />
-
-            <!-- Texto da seção Sobre -->
-            <article id="about_texto">
-                <h1>Sobre mim</h1>
                 <p>Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Quem manda
                     na minha terra sou euzis! A ordem dos tratores não altera o pão duris. Copo furadis é disculpa de
                     bebadis, arcu quam euismod magna.</p>
-
-                <div id="about_github" class="flex sobre_github">
-                    <a href="https://github.com/feperonica" target="_blank" class="botao">Github</a>
-                    <p>200 seguidores</p>
-                    <p>20 repositórios</p>
-                </div>
+                <a href="https://github.com/feperonica" target="_blank" class="botao">Explorar</a>
             </article>
+
+            <!-- Imagem da seção  Home -->
+            <article id="home_imagem" class="flex home_content">
+                <img src="./assets/img/astronauta.svg" alt="Capacete do astronauta com animação" />
+            </article>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="about" class="flex sobre_container">
 
         </section>
 
@@ -112,7 +102,11 @@
             </article>
 
             <!-- Formulário de Contato -->
-            <form action="" method="POST">
+            <form action="https://formsubmit.co/7065d88cfa92a310a1da3b7a5effb0c9" method="POST" id="formulario">
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html">
+                <input type="hidden" name="_captcha" value="false">
+
                 <label for="nome">Nome</label>
                 <input id="nome" name="nome" type="text" placeholder="Digite o seu nome">
                 <span id="txtNome"></span>
@@ -137,8 +131,12 @@
 
     <!-- Rodapé da página -->
     <footer>
-        Feito com ❤ por Felipe Peronica - 2025
+        Feito com ♥ por Felipe Peronica - 2025
     </footer>
+
+    <!-- Script JavaScript -->
+    <script src="./assets/js/script.js"></script> 
+
 </body>
 
 </html>

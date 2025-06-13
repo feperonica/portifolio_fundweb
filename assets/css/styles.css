@@ -357,8 +357,9 @@ footer {
     margin-left: 2rem;
 }
 
-/* Responsividade Mobile */
 
+
+/* Responsividade Mobile */
 @media screen and (max-width: 960px){
     body{
         display: flex;
