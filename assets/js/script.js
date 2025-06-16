@@ -22,13 +22,15 @@ async function getApiGithub() {
 
             <!-- Texto da seção Sobre -->
             <article id="about_texto">
-                <h1>Sobre mim</h1>
-                <p>${perfil.bio}</p>
+                <h2>Quem é Felipe por trás do código?</h2>
+                <p>Antes de ser desenvolvedor, sou curioso por natureza. Gosto de entender a engrenagem por trás das coisas, conectar pontas soltas, construir algo do zero e ver funcionando.</p>
+                <p>Minha jornada no desenvolvimento começou com pequenos testes, linhas soltas, erros frustrantes e descobertas incríveis. Hoje, aplico lógica, criatividade e empatia para criar soluções reais, com código limpo e propósito claro.</p>
+                <p> Atualmente, estudo Desenvolvimento Full Stack com foco em Java e React, mas minha maior habilidade continua sendo aprender rápido, a fundo e com intenção.</p>
+                <p>Este espaço é um recorte da minha evolução. Aqui, compartilho não só o que construí, mas o que aprendi em cada parte do caminho.</p>
 
                 <div id="about_github" class="flex sobre_github">
                     <a href="${perfil.html_url}" target="_blank" class="botao">Github</a>
                     <p>${perfil.followers} seguidores</p>
-                    </br>
                     <p>${perfil.public_repos} repositórios</p>
                 </div>
             </article>
